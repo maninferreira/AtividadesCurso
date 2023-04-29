@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Roboto+Mono:wght@500&display=swap');
+
+@font-face {
+    font-family: cuscuz;
+    src: url(Space\ Shards\ Italic.ttf);/* ../ */
+}
+:root{
+    --cor1: #26221A;
+    --cor2: #403E3B;
+    --cor3: #73726E;
+}
+
+
+
+
+h1{color: var(--cor2);
+    font-family:cuscuz ;
+    background-image: radial-gradient(circle, rgb(0, 255, 221),rgb(252, 252, 252),rgb(0, 255, 221));
+    text-align: center;
+}
+h2{color: var(--cor2);
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+
+}
+    /* color: #D99C52;background-color: #011C26;
+    text-align: center;
+    font-family: cursive;
+    background-image: radial-gradient(circle, red,yellow,blue);*/
+  

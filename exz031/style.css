@@ -1,0 +1,39 @@
+@charset "UTF-8";
+ 
+body{
+    font-style: initial;
+    background-color: rgba(1, 150, 250, 0.795);
+}
+
+
+#h1{
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+    color: white;
+    margin-top: 13%;
+}
+
+#corpo{
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    font-style: initial;
+    font-size: 25px;
+     margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: rgb(0,0,0);
+    padding: 5px; 
+    box-shadow: 1px 5px 15px;
+}
+
+#final{
+    font-family: Arial, Helvetica, sans-serif ;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    margin-top: -10;
+    font-size: 20px;
+    padding-top: 20px;
+
+}

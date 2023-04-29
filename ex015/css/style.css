@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@font-face {
+    font-family: pokemon;
+    src: url(Pokemon\ Solid.ttf);
+}
+:root{
+    --cor1: #0597F2;
+    --cor2: #0367A6;
+    --cor3: #6BBEF2;
+    --cor4: #F2F2F2;
+    --cor5: #0D0D0D;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+#caixaheader{
+    box-shadow: 4px 4px 10px #0597f2;
+    width: 100%;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    background-color: #F2F2F2;
+    position: fixed;
+}
+#caixalogo{
+    display: flex;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    max-width: 1150px;
+    width: 80%;
+    height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+}
+header  img{
+    margin-right: 10px;
+
+}
+header  p{
+    font-family:pokemon ;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    
+
+}
+header > nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+#botaomenu{
+    display: none;
+}
+#menu{
+    margin-top: 10px;
+    display: flex;
+}
+
+label[for='botaomenu']{
+    cursor: pointer;
+    background-color:#0597f2;
+    font-size: 30px;
+    padding: 5px;
+    color: #F2F2F2;
+    width: 40px;
+    height: 40px;
+    text-align: center; 
+    align-items: center;
+    display: none;
+    margin-left: 80%;
+    position:absolute;
+    right: 0px;
+
+}
+
+#mobilemenu{   
+    display: inline-block;
+    color: #F2F2F2;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    align-items: center;
+    
+}
+#mobilemenu:hover{
+    background-color: white;
+    outline: 1px solid black;
+    color: black;
+}
+@media (max-width: 1061px){
+    #menu{
+        flex-direction: column;
+        margin-left: -200%;
+        
+    }
+    label[for='botaomenu']{
+        display: block;
+    }
+    #botaomenu:checked ~ #menu{
+        display: flex;
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 35%;
+        margin-right: 50%;
+        border:1px solid #0597F2;
+        background-color: #dce2e6;
+        color:#000000 ;
+        
+    }
+}
+
+
+header > nav >a{
+    display: inline-block;
+    text-decoration:none ;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: var(--cor2);
+}
+header > nav > a:hover{
+   color: var(--cor3);
+}
+#ImagemTop{
+    margin: 0 0 0 0 ;
+    height: 400px;
+    background-image: url("imagemtop.jpg");
+    background-repeat:no-repeat ; 
+    background-size:cover ;
+    background-position:center center ;
+}
+main{
+
+   max-width: 1170px;
+   width: 80%;
+   margin: auto;
+  
+}
+footer{
+    display: flex;
+    max-width: 1150px;
+    width: 100%;
+    background-color: #000000;
+    height: 150px;
+    color: antiquewhite;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+footer  div{
+    display: flex;
+    width: 32%; /* altura */
+    height: 100%; /* largura */
+    align-items: center;
+}
+
+#footerleft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#footercenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+#footerringht{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+li{
+    margin: 16px ;
+}
+p{
+    text-align: justify; 
+    font-size: 20px;
+}
+h1{
+font-size: 50px;
+}
+h2{
+    font-size: 35px;
+}
+
+
+@media(max-width:1080px) {
+header > nav{
+    display: none;
+}
+}
+
+
+/* display: flex; colocar imagem e titulo em mesma linha 
+align-items: center; centralisa na vertical 
+dive caixa que ocupa tudo 
+span caixa que ocupa so o conteudo 
+*/
+/*  
+padding: 15px 20%;
+
+
+ margin: auto;
+   width:  60%;
+*/
